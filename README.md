@@ -22,7 +22,7 @@ STEP 1 : ดาวโหลดไฟล์ Theme ในโฟลเดอร์ 
 
 STEP 2 : แตกไฟล์ Theme (.zip) ไว้ในโฟล์เดอร์ root (advanced_project) 
 
-STEP 3 : ดับเบิ้ลคลิกไฟล์ Theme (.exe) ไว้ในโฟล์เดอร์ root (advanced_project)
+STEP 3 : ดับเบิ้ลคลิกไฟล์ Theme (.exe) กดปุ่ม extract และ ปุ่ม yes to all ไว้ในโฟล์เดอร์ root (advanced_project)
 
 หมายเหตุ : การติดตั้ง Theme ควรดำเนินการ หลังจากสร้างโปรเจกใหม่ ทันที (สนับสนุน drivesource/yii2-app-advanced เท่านั้น)
 
