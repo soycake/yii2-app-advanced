@@ -27,7 +27,7 @@ STEP 3 : ดับเบิ้ลคลิกไฟล์ Theme (.exe) ไว้
 หมายเหตุ : การติดตั้ง Theme ควรดำเนินการ หลังจากสร้างโปรเจกใหม่ ทันที (สนับสนุน drivesource/yii2-app-advanced เท่านั้น)
 
 # อ้างอิง
-[Yii Framework v.2](http://www.yiiframework.com/)
+[Yii Framework](http://www.yiiframework.com/)
 
 # ติดต่อ
 [โค้ชแม็กสอนเขียนโปรแกรมออนไลน์](https://www.facebook.com/coursetrainingonline/)
