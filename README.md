@@ -1,5 +1,5 @@
 # Yii2 Advanced Template
-Yii2 Advanced Template
+เวอร์ชั่นล่าสุด v2.0.8.01
 
 # ขั้นตอนการสร้างโปรเจกใหม่
 STEP 1 : สร้างโปรเจกใหม่ ชื่อว่า "advanced_project"
