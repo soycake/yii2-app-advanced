@@ -1,4 +1,5 @@
 <?php
+
 namespace frontend\controllers;
 
 use Yii;
@@ -13,16 +14,9 @@ use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
 use frontend\models\ContactForm;
 
-/**
- * Site controller
- */
-class SiteController extends Controller
-{
-    /**
-     * @inheritdoc
-     */
-    public function behaviors()
-    {
+class SiteController extends Controller {
+    
+    public function behaviors(){
         return [
             'access' => [
                 'class' => AccessControl::className(),
@@ -49,11 +43,7 @@ class SiteController extends Controller
         ];
     }
 
-    /**
-     * @inheritdoc
-     */
-    public function actions()
-    {
+    public function actions(){
         return [
             'error' => [
                 'class' => 'yii\web\ErrorAction',
@@ -65,23 +55,11 @@ class SiteController extends Controller
         ];
     }
 
-    /**
-     * Displays homepage.
-     *
-     * @return mixed
-     */
-    public function actionIndex()
-    {
+    public function actionIndex(){
         return $this->render('index');
     }
 
-    /**
-     * Logs in a user.
-     *
-     * @return mixed
-     */
-    public function actionLogin()
-    {
+    public function actionLogin(){
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
         }
@@ -96,25 +74,12 @@ class SiteController extends Controller
         }
     }
 
-    /**
-     * Logs out the current user.
-     *
-     * @return mixed
-     */
-    public function actionLogout()
-    {
+    public function actionLogout(){
         Yii::$app->user->logout();
-
         return $this->goHome();
     }
 
-    /**
-     * Displays contact page.
-     *
-     * @return mixed
-     */
-    public function actionContact()
-    {
+    public function actionContact(){
         $model = new ContactForm();
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
             if ($model->sendEmail(Yii::$app->params['adminEmail'])) {
@@ -131,23 +96,11 @@ class SiteController extends Controller
         }
     }
 
-    /**
-     * Displays about page.
-     *
-     * @return mixed
-     */
-    public function actionAbout()
-    {
+    public function actionAbout(){
         return $this->render('about');
     }
 
-    /**
-     * Signs user up.
-     *
-     * @return mixed
-     */
-    public function actionSignup()
-    {
+    public function actionSignup() {
         $model = new SignupForm();
         if ($model->load(Yii::$app->request->post())) {
             if ($user = $model->signup()) {
@@ -156,19 +109,12 @@ class SiteController extends Controller
                 }
             }
         }
-
         return $this->render('signup', [
             'model' => $model,
         ]);
     }
 
-    /**
-     * Requests password reset.
-     *
-     * @return mixed
-     */
-    public function actionRequestPasswordReset()
-    {
+    public function actionRequestPasswordReset(){
         $model = new PasswordResetRequestForm();
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
             if ($model->sendEmail()) {
@@ -179,35 +125,25 @@ class SiteController extends Controller
                 Yii::$app->session->setFlash('error', 'Sorry, we are unable to reset password for email provided.');
             }
         }
-
         return $this->render('requestPasswordResetToken', [
             'model' => $model,
         ]);
     }
 
-    /**
-     * Resets password.
-     *
-     * @param string $token
-     * @return mixed
-     * @throws BadRequestHttpException
-     */
-    public function actionResetPassword($token)
-    {
+    public function actionResetPassword($token){
         try {
             $model = new ResetPasswordForm($token);
         } catch (InvalidParamException $e) {
             throw new BadRequestHttpException($e->getMessage());
         }
-
         if ($model->load(Yii::$app->request->post()) && $model->validate() && $model->resetPassword()) {
             Yii::$app->session->setFlash('success', 'New password was saved.');
 
             return $this->goHome();
         }
-
         return $this->render('resetPassword', [
             'model' => $model,
         ]);
     }
+    
 }
