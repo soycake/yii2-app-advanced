@@ -1,5 +1,6 @@
 {
     "name": "drivesource/yii2-app-advanced",
+    "version": "2.0.8-modify-v1.0.0",
     "description": "Yii 2 Advanced Project Template by DriveSource.C/O",
     "keywords": ["yii2", "framework", "advanced", "project template"],
     "homepage": "http://drivesource.co/",
