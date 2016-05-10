@@ -14,15 +14,15 @@ cd advanced_project
 
 STEP 3 : ติดตั้ง PHP Package ที่จำเป็นทั้งหมด
 ```php
-composer install
+composer install 
 ```
 
 # ขั้นตอนการติดตั้ง Theme แบบต่าง ๆ
-STEP 1 : ดาวโหลดไฟล์ Theme ในโฟลเดอร์ _themes ที่ต้องการ (zip)
+STEP 1 : ดาวโหลดไฟล์ Theme จากลิ้งค์ [Yii 2 Application Themes](https://github.com/drivesource/yii2-app-themes) ที่ต้องการ (zip)
 
 STEP 2 : แตกไฟล์ Theme (.zip) ไว้ในโฟล์เดอร์ root (advanced_project) 
 
-STEP 3 : ดับเบิ้ลคลิกไฟล์ Theme (.exe) กดปุ่ม extract และ ปุ่ม yes to all ไว้ในโฟล์เดอร์ root (advanced_project)
+STEP 3 : ดับเบิ้ลคลิกไฟล์ Theme (.exe) กดปุ่ม extract และ ปุ่ม Yes to All ไว้ในโฟล์เดอร์ root (advanced_project)
 
 หมายเหตุ : การติดตั้ง Theme ควรดำเนินการ หลังจากสร้างโปรเจกใหม่ ทันที (สนับสนุน drivesource/yii2-app-advanced เท่านั้น)
 
