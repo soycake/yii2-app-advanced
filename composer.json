@@ -1,9 +1,9 @@
 {
     "name": "drivesource/yii2-app-advanced",
-    "version": "v2.0.8.01",
+    "version": "v2.0.8.02",
     "description": "Yii 2 Advanced Project Template by DriveSource.C/O",
     "keywords": ["yii2", "framework", "advanced", "project template"],
-    "homepage": "http://drivesource.co/",
+    "homepage": "https://drivesource.co/",
     "type": "project",
     "license": "BSD-3-Clause",
     "support": {
