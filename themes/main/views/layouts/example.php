@@ -18,7 +18,7 @@ ExampleAsset::register($this);
         <?php
         
             NavBar::begin([
-                'brandLabel' => 'My Company',
+                'brandLabel' => Yii::$app->params['name'],
                 'brandUrl' => Yii::$app->homeUrl,
                 'options' => ['class' => 'navbar-inverse navbar-fixed-top'],
             ]);

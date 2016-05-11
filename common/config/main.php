@@ -13,7 +13,7 @@ return [
         ],
         
         'cache' => [
-            'class' => 'yii\caching\FileCache'
+            'class' => 'yii\caching\FileCache', // or use 'yii\caching\ApcCache'
         ]
         
     ]

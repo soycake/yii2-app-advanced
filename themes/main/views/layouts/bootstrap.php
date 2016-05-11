@@ -21,7 +21,7 @@ use yii\helpers\Html;
             <!-- Footer -->
             <footer class="footer">
                 <div class="container">
-                    <p class="pull-left">&copy; Modify by DRIVESOURCE.C/O <?php echo date('Y'); ?></p>
+                    <p class="pull-left">&copy; Modify by <?php echo \Yii::$app->params['modifyby']; ?> <?php echo date('Y'); ?></p>
                     <p class="pull-right"><?php echo Yii::powered(); ?></p>
                 </div>
             </footer>

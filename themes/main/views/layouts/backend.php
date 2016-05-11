@@ -14,11 +14,10 @@ BackendAsset::register($this);
 <?php $this->beginContent( '@app/../themes/main/views/layouts/bootstrap.php' ); ?>
 
     <div class="wrap">
-        
         <?php
         
             NavBar::begin([
-                'brandLabel' => 'My Company',
+                'brandLabel' => Yii::$app->params['name'],
                 'brandUrl' => Yii::$app->homeUrl,
                 'options' => ['class' => 'navbar-inverse navbar-fixed-top'],
             ]);

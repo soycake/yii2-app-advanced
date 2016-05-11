@@ -19,7 +19,15 @@ return [
     'bootstrap' => ['log'],
     'modules' => [],
     
+    'defaultRoute' => 'site',
     'layout' => 'backend',
+    
+    /*
+    'aliases' => [
+        '@name1' => 'path/to/path1',
+        '@name2' => 'path/to/path2',
+    ],   
+    */
     
     'components' => [
         

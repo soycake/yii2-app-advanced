@@ -18,7 +18,15 @@ return [
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
     
+    'defaultRoute' => 'site',
     'layout' => 'frontend',
+    
+    /*
+    'aliases' => [
+        '@name1' => 'path/to/path1',
+        '@name2' => 'path/to/path2',
+    ],   
+    */
     
     'components' => [
         

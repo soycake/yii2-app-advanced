@@ -16,6 +16,15 @@ use frontend\models\ContactForm;
 
 class SiteController extends Controller {
     
+    public $layout = 'frontend';
+    public $defaultAction = 'index';
+    
+    // EXAMPLE
+    public function actionExample(){
+        // $this->layout = 'backend';
+        return $this->render('index');
+    }
+    
     public function behaviors(){
         return [
             'access' => [

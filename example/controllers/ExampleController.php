@@ -4,19 +4,17 @@ namespace example\controllers;
 
 use yii\web\Controller;
 
-class SiteController extends Controller {
+class ExampleController extends Controller {
 
     public $layout = 'example';
     public $defaultAction = 'index';
     
     // EXAMPLE
     public function actionExample(){
-        // $this->layout = 'backend';
+        
+        // $this->layout = 'example';
         return $this->render('index');
-    }
-    
-    public function actionIndex(){
-        return $this->render('index');
+        
     }
 
 }
